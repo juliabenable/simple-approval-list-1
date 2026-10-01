@@ -1,0 +1,608 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Simple&#x27;s November creators</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1c1c1c;--mid:#717171;--line:#e3e3e3;--weak:#f1f1f1;--accent:#7a5cfa;--accent-deep:#6a4be6;--canvas:#f5f4f8;--soft:#faf9fd}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--canvas);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.45;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.topbar{height:56px;background:#fff;border-bottom:1px solid var(--line)}
+.topbar .in{max-width:960px;margin:0 auto;padding:0 20px;height:100%;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.topbar img{height:22px;display:block}
+.topbar .shared{font-size:13px;color:var(--mid);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wrap{max-width:960px;margin:0 auto;padding:36px 20px 80px}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:26px;line-height:1.25;font-weight:600;letter-spacing:-.01em;margin:8px 0 10px;text-wrap:balance;max-width:640px}
+.intro{font-size:16px;line-height:1.5;color:var(--ink);max-width:640px;margin:0}
+.ask{margin-top:18px;font-size:14px;line-height:1.5;color:var(--mid);max-width:640px}
+.ask b{color:var(--ink);font-weight:600}
+.soc{width:22px;height:22px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;flex:none;vertical-align:middle}
+.tt{background:#111}
+.ig{background:radial-gradient(circle at 30% 110%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:inherit;font-size:14px;font-weight:600;line-height:1;padding:12px 18px;border-radius:999px;border:1px solid var(--ink);background:#fff;color:var(--ink);text-decoration:none;cursor:pointer;transition:background .15s,color .15s}
+.btn:hover{background:var(--ink);color:#fff}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.primary:hover{background:var(--accent-deep);border-color:var(--accent-deep)}
+.foot{margin-top:40px;padding-top:24px;border-top:1px solid var(--line);max-width:640px}
+.foot p{font-size:15px;line-height:1.5;margin:0 0 16px}
+.foot p.quiet{font-size:13px;color:var(--mid)}
+.demo{margin-top:36px;font-size:12px;color:var(--mid);line-height:1.5}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media print{
+  body{background:#fff}
+  .topbar{border:0}
+  .btn,.noprint{display:none !important}
+  .wrap{padding:0 0 24px;max-width:none}
+}
+
+body{background:#f7f7f8}
+.wrap{max-width:772px}
+.list{margin-top:28px}
+.pc{position:relative;background:#fff;border:1px solid #f0f0f0;border-radius:24px;box-shadow:0 4px 14px rgba(0,0,0,.08);padding:23px 24px 24px;margin-top:16px}
+.hd{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.hd .l{display:flex;align-items:center;gap:12px;min-width:0}
+.av{width:52px;height:52px;border-radius:100px;border:2px solid #fff;box-shadow:0 4px 7px rgba(0,0,0,.08);object-fit:cover;display:block;flex:none;background:#fff}
+.id{display:flex;flex-direction:column;gap:6px;min-width:0}
+.nm{display:flex;align-items:center;gap:8px}
+.nm .n{display:flex;align-items:center;gap:6px;font-size:16px;font-weight:600;color:#000;white-space:nowrap}
+.nm .n img{width:16px;height:16px;display:block}
+.nm .h{font-size:12px;color:#999;white-space:nowrap}
+.bio{font-size:12px;color:#717171;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.socs{display:flex;gap:8px;align-items:center;flex:none}
+.socs a{display:block;width:24px;height:24px}
+.socs img{width:24px;height:24px;display:block}
+.socs a.off{opacity:.25;pointer-events:none}
+.why{margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.why .t{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:600;color:var(--accent)}
+.why .t img{width:16px;height:16px;display:block}
+.why ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px}
+.why li{display:flex;align-items:center;gap:8px;font-size:14px;color:#575757;line-height:17px}
+.why li img{width:16px;height:16px;flex:none;display:block}
+.stats{display:flex;gap:16px;margin-top:22px;align-items:flex-start}
+.stats .lab{font-size:12px;font-weight:600;line-height:13.2px;color:#1c1c1c;margin-bottom:12px}
+.box{background:#fafafa;border:.5px solid #e3e3e3;border-radius:8px;height:54px;display:flex;align-items:center;padding:0 16px;gap:0}
+.box .f{display:flex;flex-direction:column;gap:4px}
+.box .k{font-size:10px;color:#717171;line-height:12px;display:flex;align-items:center;gap:4px}
+.box .k img{width:12px;height:12px;display:block}
+.box .v{font-size:13px;font-weight:600;color:#222;line-height:15.6px;display:flex;align-items:center;gap:4px}
+.box .v img{width:12px;height:12px;display:block}
+.social{width:278px;flex:none}
+.social .box .f:first-child{width:137px}
+.aud{flex:1;min-width:0}
+.aud .box{justify-content:space-between;padding-right:30px}
+.aud .box .f{min-width:52px}
+.aud .box .f .k{white-space:nowrap}
+.rc{margin-top:22px}
+.rc .lab{font-size:12px;font-weight:600;line-height:13.2px;color:#1c1c1c;margin-bottom:12px}
+.tiles{display:flex;gap:12px}
+.tile{flex:1 0 0;height:108px;border-radius:8px;border:.5px solid #e3e3e3;overflow:hidden;background:#e9e8ee;display:block;position:relative}
+.tile img{width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block;border-radius:8px}
+.tiles.n3 .tile,.tiles.n4 .tile{flex:0 0 86px}
+.pager{display:flex;align-items:center;justify-content:center;gap:24px;margin-top:24px;font-size:14px;font-weight:500}
+.count{font-size:13px;color:var(--mid);margin-top:30px}
+@media(max-width:820px){
+  .stats{flex-direction:column}
+  .social{width:100%}
+  .aud .box{padding-right:16px;gap:20px;justify-content:flex-start}
+  .aud .box .f{min-width:0}
+  .tiles{flex-wrap:wrap}
+  .tile{flex:0 0 86px}
+  .bio{white-space:normal}
+}
+@media print{.pc{box-shadow:none;break-inside:avoid;page-break-inside:avoid}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="in"><img src="img/benable-logo.svg" alt="Benable"><div style="display:flex;align-items:center;gap:14px"><span class="shared">Shared by Katherine Columna, PCA</span></div></div></header>
+<main class="wrap">
+  <div class="eyebrow">Simple&#x27;s November campaign</div><h1>The 16 creators selected for Simple</h1><p class="intro">Every creator here was handpicked by the Benable team and reviewed by Katherine.</p>
+  <p class="ask">If there are a few you&#x27;d like to remove from the selection, let Katherine know. Just send their names by email and we&#x27;ll make sure they&#x27;re excluded.</p>
+  <section class="list"><article class="pc" id="c1">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/34da08f6a0fc08df5d2c.jpeg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Monique Flores<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@skinwithmonique</span></div>
+        <div class="bio">Licensed esthetician in Nashville, TN. Sensitive-skin basics, SPF tips, skincare restocks</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="" href="https://www.instagram.com/skinwithmonique/" target="_blank" rel="noreferrer" aria-label="Open Monique Flores Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Monique Flores TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Licensed esthetician with a calm, ingredient-aware, never clinical voice</li><li><img src="img/fig-check.svg" alt="">Already posts sensitive-skin routines, SPF tips and skincare restocks</li><li><img src="img/fig-check.svg" alt="">Best channel: Instagram Reels, for trust, saves and routine education</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">4.8K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-ig12.svg" alt="Instagram">30.0%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.instagram.com/skinwithmonique/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Monique Flores"><img src="img/bp-ig-barebabeglow-3966046568409574521-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/skinwithmonique/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Monique Flores"><img src="img/bp-ig-barebabeglow-reel-3873051503091381467-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/skinwithmonique/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Monique Flores"><img src="img/bp-ig-barebabeglow-3943294038667907933-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/skinwithmonique/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Monique Flores"><img src="img/bp-ig-barebabeglow-reel-3953736030677738918-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/skinwithmonique/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Monique Flores"><img src="img/bp-ig-barebabeglow-reel-3950924631983454521-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/skinwithmonique/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Monique Flores"><img src="img/bp-ig-barebabeglow-reel-3950864414428006981-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/skinwithmonique/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Monique Flores"><img src="img/bp-ig-barebabeglow-reel-3950533941105376642-full.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c2">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/2e88e785b4c16ade9938.jpeg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Lauren Vaz<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@laurenvazzz</span></div>
+        <div class="bio">Makeup and beauty educator in Los Angeles, CA. Makeup prep and skin-finish storytelling</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Lauren Vaz Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="" href="https://www.tiktok.com/@laurenvaz" target="_blank" rel="noreferrer" aria-label="Open Lauren Vaz TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Makeup artist who frames skincare as prep: cleanse, prep, base, finish</li><li><img src="img/fig-check.svg" alt="">Drugstore-friendly beauty and makeup routines, Simple&#x27;s shelf</li><li><img src="img/fig-check.svg" alt="">Best channel: TikTok video, for discovery through makeup-prep routines</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">4.1K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-tt24.svg" alt="TikTok">8.7%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">18-24</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.tiktok.com/@laurenvaz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lauren Vaz"><img src="img/bp-tt-laurenvaz-7651653316996255006-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@laurenvaz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lauren Vaz"><img src="img/bp-tt-laurenvaz-7642159741313273118-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@laurenvaz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lauren Vaz"><img src="img/bp-tt-laurenvaz-7561260601289362719-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@laurenvaz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lauren Vaz"><img src="img/bp-tt-laurenvaz-7673265167513226527-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@laurenvaz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lauren Vaz"><img src="img/bp-tt-laurenvaz-7673192069585784094-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@laurenvaz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lauren Vaz"><img src="img/bp-tt-laurenvaz-7672296576710118687-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@laurenvaz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lauren Vaz"><img src="img/bp-tt-laurenvaz-7670609759522868510-full.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c3">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/a4048a23e6777bc1be66.jpeg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Sharae Palmer<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@sharaepalmer</span></div>
+        <div class="bio">Lifestyle and GRWM creator in Atlanta, GA. Everyday getting-ready content with a polished lens</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="" href="https://www.instagram.com/sharaepalmer/" target="_blank" rel="noreferrer" aria-label="Open Sharae Palmer Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Sharae Palmer TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Everyday GRWM with a polished lifestyle lens</li><li><img src="img/fig-check.svg" alt="">Puts skincare inside the whole getting-ready rhythm, shower to errands</li><li><img src="img/fig-check.svg" alt="">Best channel: Instagram Reels, for polished lifestyle GRWM context</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">22.5K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-ig12.svg" alt="Instagram">4.3%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.instagram.com/sharaepalmer/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sharae Palmer"><img src="img/hires-bp-ig-sharaepalmer-reel-3905730666066952697-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sharaepalmer/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sharae Palmer"><img src="img/ig-sharaepalmer-3864486266625131608-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sharaepalmer/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sharae Palmer"><img src="img/hires-ig-sharaepalmer-3875323842017737233-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sharaepalmer/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sharae Palmer"><img src="img/bp-ig-sharaepalmer-reel-3961641561007433506-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sharaepalmer/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sharae Palmer"><img src="img/bp-ig-sharaepalmer-reel-3956504126350944000-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sharaepalmer/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sharae Palmer"><img src="img/bp-ig-sharaepalmer-reel-3947737361215343723-full.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sharaepalmer/" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sharae Palmer"><img src="img/bp-ig-sharaepalmer-reel-3932499807591255144-full.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c4">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/jade.jpg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Jade Whitfield<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@jade.wht</span></div>
+        <div class="bio">Austin, TX · Routines · Skincare</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="" href="https://www.instagram.com/jade.wht" target="_blank" rel="noreferrer" aria-label="Open Jade Whitfield Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Jade Whitfield TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Morning and night routine videos with clear ingredient callouts</li><li><img src="img/fig-check.svg" alt="">Routines and skincare content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: Instagram, 12.3K followers at 6.1% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">12.3K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-ig12.svg" alt="Instagram">6.1%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">18-24</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.instagram.com/jade.wht" target="_blank" rel="noreferrer" aria-label="Open a recent post by Jade Whitfield"><img src="img/jb-ig0.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/jade.wht" target="_blank" rel="noreferrer" aria-label="Open a recent post by Jade Whitfield"><img src="img/jb-ig1.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/jade.wht" target="_blank" rel="noreferrer" aria-label="Open a recent post by Jade Whitfield"><img src="img/jb-ig2.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/jade.wht" target="_blank" rel="noreferrer" aria-label="Open a recent post by Jade Whitfield"><img src="img/jb-ig3.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/jade.wht" target="_blank" rel="noreferrer" aria-label="Open a recent post by Jade Whitfield"><img src="img/jb-ig4.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/jade.wht" target="_blank" rel="noreferrer" aria-label="Open a recent post by Jade Whitfield"><img src="img/jb-ig5.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/jade.wht" target="_blank" rel="noreferrer" aria-label="Open a recent post by Jade Whitfield"><img src="img/jb-ig6.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c5">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/priya.jpg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Priya Nair<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@priya.glow</span></div>
+        <div class="bio">Chicago, IL · Product education · Gen Z</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Priya Nair Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="" href="https://www.tiktok.com/@priya.glow" target="_blank" rel="noreferrer" aria-label="Open Priya Nair TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Explains one ingredient per video, niacinamide and ceramides already in her feed</li><li><img src="img/fig-check.svg" alt="">Product education and gen z content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: TikTok, 18.9K followers at 9.4% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">18.9K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-tt24.svg" alt="TikTok">9.4%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.tiktok.com/@priya.glow" target="_blank" rel="noreferrer" aria-label="Open a recent post by Priya Nair"><img src="img/jb-tt0.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@priya.glow" target="_blank" rel="noreferrer" aria-label="Open a recent post by Priya Nair"><img src="img/jb-tt1.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@priya.glow" target="_blank" rel="noreferrer" aria-label="Open a recent post by Priya Nair"><img src="img/jb-tt2.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@priya.glow" target="_blank" rel="noreferrer" aria-label="Open a recent post by Priya Nair"><img src="img/jb-tt3.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@priya.glow" target="_blank" rel="noreferrer" aria-label="Open a recent post by Priya Nair"><img src="img/jb-tt4.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@priya.glow" target="_blank" rel="noreferrer" aria-label="Open a recent post by Priya Nair"><img src="img/jb-tt5.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@priya.glow" target="_blank" rel="noreferrer" aria-label="Open a recent post by Priya Nair"><img src="img/jb-tt6.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c6">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/nia.jpg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Nia Coleman<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@niacoleman</span></div>
+        <div class="bio">Houston, TX · Sensitive skin · Routines</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="" href="https://www.instagram.com/niacoleman" target="_blank" rel="noreferrer" aria-label="Open Nia Coleman Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Nia Coleman TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Sensitive-skin routines, gentle cleansers, a trusted voice for the Repair+ story</li><li><img src="img/fig-check.svg" alt="">Sensitive skin and routines content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: Instagram, 7.2K followers at 11.8% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">7.2K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-ig12.svg" alt="Instagram">11.8%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.instagram.com/niacoleman" target="_blank" rel="noreferrer" aria-label="Open a recent post by Nia Coleman"><img src="img/dp-ig0.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/niacoleman" target="_blank" rel="noreferrer" aria-label="Open a recent post by Nia Coleman"><img src="img/dp-ig1.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/niacoleman" target="_blank" rel="noreferrer" aria-label="Open a recent post by Nia Coleman"><img src="img/dp-ig2.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/niacoleman" target="_blank" rel="noreferrer" aria-label="Open a recent post by Nia Coleman"><img src="img/dp-ig3.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/niacoleman" target="_blank" rel="noreferrer" aria-label="Open a recent post by Nia Coleman"><img src="img/dp-ig4.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/niacoleman" target="_blank" rel="noreferrer" aria-label="Open a recent post by Nia Coleman"><img src="img/dp-ig5.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/niacoleman" target="_blank" rel="noreferrer" aria-label="Open a recent post by Nia Coleman"><img src="img/dp-ig6.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c7">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/amara.jpg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Amara Osei<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@amara.o</span></div>
+        <div class="bio">Brooklyn, NY · Trendy formats · GRWM</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Amara Osei Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="" href="https://www.tiktok.com/@amara.o" target="_blank" rel="noreferrer" aria-label="Open Amara Osei TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Trend-first GRWM with a strong hook in the first 3 seconds, easy to recut for ads</li><li><img src="img/fig-check.svg" alt="">Trendy formats and grwm content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: TikTok, 31.4K followers at 7.2% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">31.4K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-tt24.svg" alt="TikTok">7.2%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.tiktok.com/@amara.o" target="_blank" rel="noreferrer" aria-label="Open a recent post by Amara Osei"><img src="img/dp-tt0.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@amara.o" target="_blank" rel="noreferrer" aria-label="Open a recent post by Amara Osei"><img src="img/dp-tt1.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@amara.o" target="_blank" rel="noreferrer" aria-label="Open a recent post by Amara Osei"><img src="img/dp-tt2.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@amara.o" target="_blank" rel="noreferrer" aria-label="Open a recent post by Amara Osei"><img src="img/dp-tt3.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@amara.o" target="_blank" rel="noreferrer" aria-label="Open a recent post by Amara Osei"><img src="img/dp-tt4.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@amara.o" target="_blank" rel="noreferrer" aria-label="Open a recent post by Amara Osei"><img src="img/dp-tt5.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@amara.o" target="_blank" rel="noreferrer" aria-label="Open a recent post by Amara Osei"><img src="img/dp-tt6.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c8">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/sofia.jpg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Sofia Marin<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@sofiamarin</span></div>
+        <div class="bio">Miami, FL · Lifestyle · Holiday</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="" href="https://www.instagram.com/sofiamarin" target="_blank" rel="noreferrer" aria-label="Open Sofia Marin Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Sofia Marin TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Lifestyle creator who does seasonal gift edits every November</li><li><img src="img/fig-check.svg" alt="">Lifestyle and holiday content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: Instagram, 9.6K followers at 5.5% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">9.6K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-ig12.svg" alt="Instagram">5.5%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">18-24</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.instagram.com/sofiamarin" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sofia Marin"><img src="img/lo-ig0.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sofiamarin" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sofia Marin"><img src="img/lo-ig1.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sofiamarin" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sofia Marin"><img src="img/lo-ig2.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sofiamarin" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sofia Marin"><img src="img/lo-ig3.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sofiamarin" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sofia Marin"><img src="img/lo-ig4.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sofiamarin" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sofia Marin"><img src="img/lo-ig5.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/sofiamarin" target="_blank" rel="noreferrer" aria-label="Open a recent post by Sofia Marin"><img src="img/lo-ig6.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c9">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/rec-emma.jpeg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Emma Lindqvist<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@emma.lq</span></div>
+        <div class="bio">Seattle, WA · Dry skin · Product education</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Emma Lindqvist Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="" href="https://www.tiktok.com/@emma.lq" target="_blank" rel="noreferrer" aria-label="Open Emma Lindqvist TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Dry-skin routines in a cold climate, the winter barrier angle for Repair+</li><li><img src="img/fig-check.svg" alt="">Dry skin and product education content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: TikTok, 5.4K followers at 14.2% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">5.4K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-tt24.svg" alt="TikTok">14.2%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.tiktok.com/@emma.lq" target="_blank" rel="noreferrer" aria-label="Open a recent post by Emma Lindqvist"><img src="img/lo-tt0.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@emma.lq" target="_blank" rel="noreferrer" aria-label="Open a recent post by Emma Lindqvist"><img src="img/lo-tt1.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@emma.lq" target="_blank" rel="noreferrer" aria-label="Open a recent post by Emma Lindqvist"><img src="img/lo-tt2.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@emma.lq" target="_blank" rel="noreferrer" aria-label="Open a recent post by Emma Lindqvist"><img src="img/lo-tt3.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@emma.lq" target="_blank" rel="noreferrer" aria-label="Open a recent post by Emma Lindqvist"><img src="img/lo-tt4.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@emma.lq" target="_blank" rel="noreferrer" aria-label="Open a recent post by Emma Lindqvist"><img src="img/lo-tt5.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@emma.lq" target="_blank" rel="noreferrer" aria-label="Open a recent post by Emma Lindqvist"><img src="img/lo-tt6.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c10">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/rec-leea.png" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Leea Tran<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@leea.tran</span></div>
+        <div class="bio">San Jose, CA · Beauty educator · Millennial</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="" href="https://www.instagram.com/leea.tran" target="_blank" rel="noreferrer" aria-label="Open Leea Tran Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Leea Tran TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Beauty educator, before and after texture content that fits Smooth+</li><li><img src="img/fig-check.svg" alt="">Beauty educator and millennial content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: Instagram, 14.7K followers at 4.9% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">14.7K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-ig12.svg" alt="Instagram">4.9%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.instagram.com/leea.tran" target="_blank" rel="noreferrer" aria-label="Open a recent post by Leea Tran"><img src="img/mc-ig0.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/leea.tran" target="_blank" rel="noreferrer" aria-label="Open a recent post by Leea Tran"><img src="img/mc-ig1.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/leea.tran" target="_blank" rel="noreferrer" aria-label="Open a recent post by Leea Tran"><img src="img/mc-ig2.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/leea.tran" target="_blank" rel="noreferrer" aria-label="Open a recent post by Leea Tran"><img src="img/mc-ig3.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/leea.tran" target="_blank" rel="noreferrer" aria-label="Open a recent post by Leea Tran"><img src="img/mc-ig4.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/leea.tran" target="_blank" rel="noreferrer" aria-label="Open a recent post by Leea Tran"><img src="img/mc-ig5.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/leea.tran" target="_blank" rel="noreferrer" aria-label="Open a recent post by Leea Tran"><img src="img/mc-ig6.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c11">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/rec-lulu.jpeg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Lulu Park<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@lulu.pk</span></div>
+        <div class="bio">Los Angeles, CA · Trendy formats · Gen Z</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Lulu Park Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="" href="https://www.tiktok.com/@lulu.pk" target="_blank" rel="noreferrer" aria-label="Open Lulu Park TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Fast trendy formats, product-in-hand from the first frame</li><li><img src="img/fig-check.svg" alt="">Trendy formats and gen z content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: TikTok, 26.8K followers at 8.1% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">26.8K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-tt24.svg" alt="TikTok">8.1%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.tiktok.com/@lulu.pk" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lulu Park"><img src="img/mc-tt0.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@lulu.pk" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lulu Park"><img src="img/mc-tt1.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@lulu.pk" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lulu Park"><img src="img/mc-tt2.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@lulu.pk" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lulu Park"><img src="img/mc-tt3.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@lulu.pk" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lulu Park"><img src="img/mc-tt4.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@lulu.pk" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lulu Park"><img src="img/mc-tt5.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@lulu.pk" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lulu Park"><img src="img/mc-tt6.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c12">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/rec-marina.jpeg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Marina Costa<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@marina.c</span></div>
+        <div class="bio">Orlando, FL · Routines · Lifestyle</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="" href="https://www.instagram.com/marina.c" target="_blank" rel="noreferrer" aria-label="Open Marina Costa Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Marina Costa TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Slow-morning routine content, calm and well lit, saves well</li><li><img src="img/fig-check.svg" alt="">Routines and lifestyle content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: Instagram, 6.1K followers at 9.7% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">6.1K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-ig12.svg" alt="Instagram">9.7%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">18-24</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.instagram.com/marina.c" target="_blank" rel="noreferrer" aria-label="Open a recent post by Marina Costa"><img src="img/tr-ig0.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/marina.c" target="_blank" rel="noreferrer" aria-label="Open a recent post by Marina Costa"><img src="img/tr-ig1.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/marina.c" target="_blank" rel="noreferrer" aria-label="Open a recent post by Marina Costa"><img src="img/tr-ig2.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/marina.c" target="_blank" rel="noreferrer" aria-label="Open a recent post by Marina Costa"><img src="img/tr-ig3.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/marina.c" target="_blank" rel="noreferrer" aria-label="Open a recent post by Marina Costa"><img src="img/tr-ig4.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/marina.c" target="_blank" rel="noreferrer" aria-label="Open a recent post by Marina Costa"><img src="img/tr-ig5.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/marina.c" target="_blank" rel="noreferrer" aria-label="Open a recent post by Marina Costa"><img src="img/tr-ig6.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c13">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/rec-samantha.jpeg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Samantha Ruiz<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@sam.ruiz</span></div>
+        <div class="bio">Phoenix, AZ · Product education · Acne care</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Samantha Ruiz Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="" href="https://www.tiktok.com/@sam.ruiz" target="_blank" rel="noreferrer" aria-label="Open Samantha Ruiz TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Acne-care education with plain-language ingredient breakdowns</li><li><img src="img/fig-check.svg" alt="">Product education and acne care content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: TikTok, 11.2K followers at 10.3% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">11.2K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-tt24.svg" alt="TikTok">10.3%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n7"><a class="tile" href="https://www.tiktok.com/@sam.ruiz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Samantha Ruiz"><img src="img/tr-tt0.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@sam.ruiz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Samantha Ruiz"><img src="img/tr-tt1.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@sam.ruiz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Samantha Ruiz"><img src="img/tr-tt2.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@sam.ruiz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Samantha Ruiz"><img src="img/tr-tt3.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@sam.ruiz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Samantha Ruiz"><img src="img/tr-tt4.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@sam.ruiz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Samantha Ruiz"><img src="img/tr-tt5.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@sam.ruiz" target="_blank" rel="noreferrer" aria-label="Open a recent post by Samantha Ruiz"><img src="img/tr-tt6.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c14">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/rec-ladaysia.png" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">LaDaysia Brown<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@ladaysia</span></div>
+        <div class="bio">Charlotte, NC · GRWM · Body care</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="" href="https://www.instagram.com/ladaysia" target="_blank" rel="noreferrer" aria-label="Open LaDaysia Brown Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open LaDaysia Brown TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">GRWM and body care, skincare as the first step of getting ready</li><li><img src="img/fig-check.svg" alt="">GRWM and body care content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: Instagram, 19.5K followers at 6.8% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">19.5K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-ig12.svg" alt="Instagram">6.8%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n3"><a class="tile" href="https://www.instagram.com/ladaysia" target="_blank" rel="noreferrer" aria-label="Open a recent post by LaDaysia Brown"><img src="img/jb-ig7.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/ladaysia" target="_blank" rel="noreferrer" aria-label="Open a recent post by LaDaysia Brown"><img src="img/jb-tt7.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/ladaysia" target="_blank" rel="noreferrer" aria-label="Open a recent post by LaDaysia Brown"><img src="img/dp-ig7.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c15">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/maya.jpg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Maya Lin<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@maya.lin</span></div>
+        <div class="bio">Denver, CO · Skincare · Gen Z</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Maya Lin Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="" href="https://www.tiktok.com/@maya.lin" target="_blank" rel="noreferrer" aria-label="Open Maya Lin TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Skincare-only feed, restocks and empties, honest tone Simple&#x27;s audience trusts</li><li><img src="img/fig-check.svg" alt="">Skincare and gen z content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: TikTok, 8.8K followers at 12.5% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">8.8K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-tt24.svg" alt="TikTok">12.5%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n3"><a class="tile" href="https://www.tiktok.com/@maya.lin" target="_blank" rel="noreferrer" aria-label="Open a recent post by Maya Lin"><img src="img/dp-tt7.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@maya.lin" target="_blank" rel="noreferrer" aria-label="Open a recent post by Maya Lin"><img src="img/lo-ig7.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.tiktok.com/@maya.lin" target="_blank" rel="noreferrer" aria-label="Open a recent post by Maya Lin"><img src="img/lo-tt7.jpg" alt="" loading="lazy"></a></div></div>
+</article><article class="pc" id="c16">
+  <div class="hd">
+    <div class="l">
+      <img class="av" src="img/lena.jpg" alt="">
+      <div class="id">
+        <div class="nm"><span class="n">Lena Fischer<img src="img/fig-verified.svg" alt="Verified"></span><span class="h">@lena.fsc</span></div>
+        <div class="bio">Portland, OR · Lifestyle · Millennial</div>
+      </div>
+    </div>
+    <div class="socs">
+      <a class="" href="https://www.instagram.com/lena.fsc" target="_blank" rel="noreferrer" aria-label="Open Lena Fischer Instagram profile"><img src="img/fig-ig24.svg" alt=""></a>
+      <a class="off" href="#" target="_blank" rel="noreferrer" aria-label="Open Lena Fischer TikTok profile"><img src="img/fig-tt24.svg" alt=""></a>
+    </div>
+  </div>
+  <div class="why"><div class="t"><img src="img/fig-sparkle.svg" alt="">Why they fit</div><ul><li><img src="img/fig-check.svg" alt="">Lifestyle with a routine moment in most posts, warm and unscripted</li><li><img src="img/fig-check.svg" alt="">Lifestyle and millennial content, a fit for both the Repair+ and Smooth+ bundles</li><li><img src="img/fig-check.svg" alt="">Best channel: Instagram, 15.1K followers at 5.2% engagement</li></ul></div>
+  <div class="stats">
+    <div class="social"><div class="lab">Social Stats</div>
+      <div class="box">
+        <div class="f"><div class="k">Followers</div><div class="v">15.1K</div></div>
+        <div class="f"><div class="k">Engagement <img src="img/fig-info.svg" alt=""></div><div class="v"><img src="img/fig-ig12.svg" alt="Instagram">5.2%</div></div>
+      </div>
+    </div>
+    <div class="aud"><div class="lab">Audience</div>
+      <div class="box">
+        <div class="f"><div class="k">Location</div><div class="v">USA</div></div>
+        <div class="f"><div class="k">Age Range</div><div class="v">25-34</div></div>
+        <div class="f"><div class="k">Gender</div><div class="v">Female</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="rc"><div class="lab">Recent content</div><div class="tiles n3"><a class="tile" href="https://www.instagram.com/lena.fsc" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lena Fischer"><img src="img/mc-ig7.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/lena.fsc" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lena Fischer"><img src="img/mc-tt7.jpg" alt="" loading="lazy"></a><a class="tile" href="https://www.instagram.com/lena.fsc" target="_blank" rel="noreferrer" aria-label="Open a recent post by Lena Fischer"><img src="img/tr-ig7.jpg" alt="" loading="lazy"></a></div></div>
+</article></section>
+  <div class="foot"><p>That&#x27;s everyone. If there are a few creators you&#x27;d like to remove, email their names to Katherine and we&#x27;ll make sure they&#x27;re excluded.</p><a class="btn" href="mailto:?subject=Simple%20creators%20for%20November%3A%20a%20few%20to%20remove&body=Hi%20Katherine%2C%0A%0APlease%20remove%20these%20creators%20from%20the%20selection%3A%0A%0A"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg> Email Katherine</a></div>
+  <p class="demo">Prototype data: Monique, Lauren and Sharae are real candidates from Logan's Sep 10 showcase. The other 13 names are invented, with avatars and stills reused from earlier studies. Counts, dates and the recipient's first name are placeholders.</p>
+</main>
+<script></script>
+</body>
+</html>
